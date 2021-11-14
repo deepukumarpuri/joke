@@ -1,0 +1,27 @@
+{
+  "name": "YouTube Downloader Bot",
+  "description": "A telegram bot To Download Youtube Files ",
+  "logo": "https://telegra.ph/file/6a3b1febade2313dd0dca.jpg",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://github.com/deepukumarpuri/Youtube-Downloader-Bot",
+  "success_url": "https://t.me/youtubdlbot",
+  "website": "https://github.com/deepukumarpuri/Youtube-Downloader-Bot",
+  "env": {
+
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
